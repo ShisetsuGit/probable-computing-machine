@@ -13,11 +13,11 @@ final class Game {
     
     var session: Session?
     
-    private let caretaker = Save_Load()
+    private let caretaker = SaveLoad()
  
     var score = [ScoreTable]() {
         didSet {
-            caretaker.saveData(toSave: score)
+            caretaker.saveData(toSave: self.score)
         }
     }
     
@@ -27,6 +27,15 @@ final class Game {
     
     func recordScore(_ score: ScoreTable) {
         self.score.append(score)
+    }
+    
+    func didEndGame() {
+        guard let gameSession = self.session else { return }
+        let answersCount = gameSession.correctAnswers
+        let reward = gameSession.totalReward
+        let score = ScoreTable(score: Int(answersCount), date: Date(), reward: reward)
+        self.recordScore(score)
+        self.session = nil
     }
     
 }

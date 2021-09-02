@@ -1,5 +1,5 @@
 //
-//  Save_Load.swift
+//  SaveLoad.swift
 //  Millionaire
 //
 //  Created by Shisetsu on 31.08.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Save_Load {
+final class SaveLoad {
     private let save = JSONEncoder()
     private let load = JSONDecoder()
     

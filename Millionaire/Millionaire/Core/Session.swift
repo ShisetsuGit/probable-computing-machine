@@ -7,15 +7,16 @@
 
 import Foundation
 
-final class Session {
+class Session {
     
-    var questionCount: Int
-    var correctAnswers: Int
-    var totalReward: Int
-    
-    init(questionCount: Int, correctAnswers: Int, totalReward: Int) {
-        self.questionCount = questionCount
-        self.correctAnswers = correctAnswers
-        self.totalReward = totalReward
+    var questionCount: Int = questions.count
+    var correctAnswers: Int = 0
+    var totalReward: Int = 0
+}
+
+extension Session: GameSceneDelegate {
+    func resultSummation (_ controller: GameScene, questions: QuestionsPull) {
+        self.correctAnswers += 1
+        self.totalReward += questions.answerReward
     }
 }

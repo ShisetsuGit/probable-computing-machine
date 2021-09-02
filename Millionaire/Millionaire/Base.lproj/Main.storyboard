@@ -170,13 +170,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="8Xb-Vh-rQi"/>
                     <connections>
-                        <outlet property="AnswerA" destination="fii-0c-Rbw" id="Qra-Te-emU"/>
-                        <outlet property="AnswerB" destination="yRZ-Rk-tYC" id="SGe-Sa-T0k"/>
-                        <outlet property="AnswerC" destination="dLq-gN-vW4" id="LFL-38-Bjn"/>
-                        <outlet property="AnswerD" destination="QlY-2v-tSG" id="aW1-Fg-Vdj"/>
-                        <outlet property="PlayerName" destination="ZSr-rF-Ad2" id="TFb-Mo-QUn"/>
-                        <outlet property="Question" destination="PWz-1W-gcq" id="tGU-ir-Q61"/>
-                        <outlet property="QuestionNumber" destination="O5j-9E-KDg" id="A1W-nP-41q"/>
+                        <outlet property="answerALabel" destination="fii-0c-Rbw" id="Lb6-vh-4Dg"/>
+                        <outlet property="answerBLabel" destination="dLq-gN-vW4" id="UEN-nA-C8v"/>
+                        <outlet property="answerCLabel" destination="yRZ-Rk-tYC" id="hyG-K8-0zD"/>
+                        <outlet property="answerDLabel" destination="QlY-2v-tSG" id="4qw-cE-4O1"/>
+                        <outlet property="playerNameLabel" destination="ZSr-rF-Ad2" id="mki-rA-7gY"/>
+                        <outlet property="questionLabel" destination="PWz-1W-gcq" id="qBS-tU-Ugc"/>
+                        <outlet property="questionNumberLabel" destination="O5j-9E-KDg" id="agJ-Wm-x2Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAo-9i-hdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

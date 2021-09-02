@@ -21,5 +21,4 @@ class AnswerButton: UIButton {
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.cornerRadius = 35
     }
-
 }
