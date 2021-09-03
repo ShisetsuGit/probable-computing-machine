@@ -14,7 +14,6 @@ protocol GameSceneDelegate: AnyObject {
 final class GameScene: UIViewController {
     
     weak var gameDelegate: GameSceneDelegate?
-//    var session: Session?
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var playerNameLabel: UILabel!
